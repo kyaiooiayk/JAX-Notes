@@ -28,6 +28,14 @@ def model_fn(x, y, z):
   - `pmap` -  SPMD (single program multiple data) programming. It instead (contrary to `vmap`) replicates the function and executes each replica on its own XLA device in parallel.
 ***
 
+## Ecosystem
+- There are projects built on top of JAX that add extra bits.
+  - [Flax](https://flax.readthedocs.io/en/latest/index.html) is a neural network libraries
+  - [Haiku](https://github.com/deepmind/dm-haiku) is a neural network libraries
+  - [Optax](https://github.com/deepmind/optax) is an optimiser
+  - [PIX](https://dm-pix.readthedocs.io/en/latest/) for image processing
+***
+
 ## References
 - [JAX Quickstart](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html#)
 - [Jax Wiki](https://en.wikipedia.org/wiki/Google_JAX#pmap)
